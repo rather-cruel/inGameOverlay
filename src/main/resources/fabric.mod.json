@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ingameoverlay",
+	"version": "${version}",
+	"name": "inGameOverlay",
+	"description": "In-Game Overlay! Surf web while playing!",
+	"authors": [
+		"RatherKruel"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/rather-cruel/Minecraft-Overlay"
+	},
+	"license": "MIT",
+	"icon": "assets/ingameoverlay/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.rathercruel.InGameOverlay"
+		],
+		"client" : [
+			"com.rathercruel.InGameOverlayClient"
+		],
+		"fabric-datagen": [
+			"com.rathercruel.InGameOverlayModDataGenerator"
+		]
+	},
+	"mixins": [
+		"ingameoverlay.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.20",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
